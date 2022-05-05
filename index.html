@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <title>George Puryear's Portfolio</title>
+    <!--    <link rel="stylesheet" href="../codeup-web-exercises/css/weather_map.css">-->
+</head>
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <div class="container-fluid d-flex align align-items-center py-2">
+        <a class="navbar-brand" href="#">George Puryear</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#">Projects</a>
+                </li>
+                <li class="">
+                    <a class="nav-link" href="#">Connect</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<h1>TEST</h1>
+<!--Title Card-->
+<div id="dropFrame">
+    <div id="titleCard" class="card mb-3 mx-auto" style="max-width: 100%;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                <img src="images/headShot.png" class="img-fluid rounded-start" alt="headshot">
+            </div>
+            <div class="col-md-8 d-flex align-items-center flex-nowrap">
+                <div class="card-body">
+                    <div class="d-flex justify-content-center">
+                        <h1 class="card-title">George Puryear</h1>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <h2 id="jobTitle" class="card-title">Full Stack Web Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--<div class="card_container mx-auto">-->
+<!--    <div class="card card_flip card_front mt-4 mx-auto d-flex justify-content-center">-->
+<!--        <div id="headShotContainer" class="d-flex justify-content-center align-items-center">-->
+<!--            <img src="images/headShot.png" class="card-img-top head_shot" alt="headshot">-->
+<!--        </div>-->
+<!--        <div class="card-body text-center">-->
+<!--            <p class="card-text head_shot_txt">-->
+<!--            <h3>George Puryear</h3></p>-->
+<!--            <p class="card-text head_shot_txt"><h5>Full Stack Web Developer</h5></p>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    &lt;!&ndash;About Me Card&ndash;&gt;-->
+<!--    <div class="card card_flip card_back mt-4" style="width: 18rem;">-->
+<!--        <div class="card-body">-->
+<!--            <h5 class="card-title">About me: </h5>-->
+<!--            <p class="card-text">Hi, I am George.</p>-->
+<!--            <a href="#" class="btn btn-primary">About me</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--Carousel Displaying Projects-->
+<div id="projectCarousel" class="carousel slide mx-auto">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#projectCarousel" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+    </div>
+    <!--Carousel Card Weather Map-->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="images/weatherProject.png" class="d-block w-100" alt="Weather Map Project">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Weather Map</h5>
+                <p>An Anchorman themed page where users can find the 5 day weather forecast for any location
+                    around the world. This can be done by entering a location by name or address in the
+                    search bar, or by drag and dropping the marker on the map.</p>
+                <p>Technologies Used: HTML, CSS, Bootstrap, JavaScript, jQuery "OpenWeatherMap"
+                    and "Mapbox GL JS" APIs</p>
+                <form>
+                    <button type="submit" formaction="projects/weatherMap/weather_map.html">Go To Project</button>
+                </form>
+            </div>
+        </div>
+        <!--Carousel Card Konami Code-->
+        <div class="carousel-item">
+            <img src="images/KonamiCode.png" class="d-block w-100" alt="Konami Code Project">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Konami Code Project</h5>
+                <p style="color: red">Users enter the infamous "Konami Cheat Code"
+                    (&#x2191&#x2191&#x2193&#x2193&#8592&#x2192&#8592&#x2192 B A) code using their keyboard
+                    before the timer expires.</p>
+                <p>Technologies Used: HTML, CSS, jQuery, JavaScript</p>
+                <form>
+                    <button type="submit" formaction="projects/konami/konami.html">Go To Project</button>
+                </form>
+            </div>
+        </div>
+        <!--Carousel Card Chuck Norris Joke Generator-->
+        <div class="carousel-item">
+            <img src="images/JokeGenerator.png" class="d-block w-100" alt="Chuck Norris Joke Generator">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Chuck Norris Joke Generator</h5>
+                <p>Users can generate a random Chuck Norris joke with the push of a button.
+                    I mean, who doesn't love a good Chuck Norris joke?</p>
+                <p>Technologies Used: HTML, CSS, jQuery, JavaScript, Chuck Norris joke API</p>
+                <form>
+                    <button type="submit" formaction="projects/chuckNorrisJokes/ChuckNorrisJokes.html">Go To Project
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!--Carousel Card Codeup Design-->
+        <div class="carousel-item">
+            <img src="images/CodeUpDesign.png" class="d-block w-100" alt="Codeup Design">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Codeup Design Page</h5>
+                <p>Mobile responsive page that was used to hone styling skills utilizing HTML, Bootstrap,
+                    and CSS.</p>
+                <p>Technologies Used: HTML, CSS, Bootstrap</p>
+                <form>
+                    <button type="submit" formaction="projects/codeup-design/codeup-design.html">Go To Project</button>
+                </form>
+            </div>
+        </div>
+        <!--Carousel Card Coffee-->
+        <div class="carousel-item">
+            <img src="images/CoffeeProject.png" class="d-block w-100" alt="Coffee Project">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Coffee Page</h5>
+                <p>Users can search for different coffees based on name and roast, and they can also add new
+                    coffees.</p>
+                <p>Technologies Used: HTML, CSS, Bootstrap, jQuery, JavaScript</p>
+                <form>
+                    <button type="submit" formaction="projects/coffeeProject/index.html">Go To Project</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+
+<!--Contact Form-->
+<div class="container">
+    <form id="contactForm" method="post" action="">
+        <div class="mb-3">
+            <label for="Name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="Name" aria-describedby="name field">
+        </div>
+        <div class="mb-3">
+            <label for="emailInput" class="form-label">Email</label>
+            <input type="email" class="form-control" id="emailInput" aria-describedby="email field">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message</label>
+            <textarea class="form-control" id="message" rows="3"></textarea>
+        </div>
+        <button type="submit" id="fcf-button" class="btn btn-primary fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">
+            Submit
+        </button>
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+
+
